@@ -1,0 +1,12 @@
+.ile {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+    border: 0px;
+    width: 100px;
+    height: 100px;
+}
