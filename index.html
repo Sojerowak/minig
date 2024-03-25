@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Wioska</title>
+    <link rel="shortcut icon" href="korona.png">
     <link rel="stylesheet" href="style.css">
 </head>
-<body  onload="dodajsurowce()">
+<body  onload="rozpoczecie()">
     <script src="js.js">
 
     </script> 
@@ -19,12 +20,82 @@
              <h1 id="zludzkie">🧍‍♂️: 10</h1>
       </div>
 
-      <div class="budynki">
-            <button id="guz" onclick="chaupa()">Chałpa: 50 💲, 20 🌲</button>
+      <div id="kategorie">
+        <h2 id="info" onclick="krajInfo()">💼Info💼</h2>
+        <h2 id="info" onclick="budynkizakl()">🛖Budynki🛖</h2>
+        <h2 id="info" onclick="wojskoinfo()">⚔️Wojsko⚔️</h2>
       </div>
 
-      <section id="budynkiLista">
+      <div id="budynki">
+            <button id="guz" onclick="chaupa()" style="background-color: brown;">Chałpa: 50 💲, 20 🌲</button>
+            <button id="tar" onclick="tartak()" style="background-color: green;">Tartak: 50 💲, 20 🗿 |🧍‍♂️= 15 </button>
+            <button id="kam" onclick="kamieniolom()" style="background-color: grey;">Tartak: 50 💲, 20 🌲 |🧍‍♂️= 15 </button>
+      </div>
+      
+      <section class="budowle">
+      <div id="budynkiLista">
+         
+      </div>
+      </section>
+
+      <!-- Kurt Cobains Death -->
+
+       <section id="cobainsDeath">
+        <div class="news">
+            <img src="kd.jpg">
+            <img src="kd.png" width="300px" height="500px">
+        </div>
+      </section>
+
+      <section id="wybor">
+         <div class="freddie">
+          <img class="zdjWlad" src="freddie.jpg">
+          <h2>Freddie Mercury uznaje swoje rozszczenia do tronu poprzez swoją karizmatyczną osobowość i ogromny wpływ,
+             jaki ma na świat muzyki. Jego legendarne osiągnięcia sceniczne, charyzma i oddanie dla sztuki sprawiają,
+              że jest naturalnym liderem. Ponadto, Mercury posługuje się swoją niepowtarzalną energią i talentem do 
+              zjednywania ludzi, co sprawia, że ​​mieszkańcy wioski szybko przekonują się do jego pretensji do tronu.
+          </h2>
+         </div>
+      </section>
+
+      <!-- Informacje o wiosce -->
+
+      <section id="wioskaInfo">
+       
+         <div class="napis"><h1 style=" font-size: 50px;">NIRVANIA</h1></div>
+         <div id="symbole">
+               <img src="nirvflag.png" width="250px" height="150px">
+               <img src="korona.png" width="250px" height="150px">
+         </div>
+ 
+         <div id="owladcywstecz">
+            <div id="owladcy">
+             <div class="zdjecieWladcy">
+                   <img src="kingkurt.jpeg" id="zdjWlad">
+                   <h4 id="imieWladcy">Kurt Cobain</h4>
+             </div>
+
+             <h2>Kurt Cobain jako władca wioski jest postacią, która stara się przede wszystkim dbać o dobro swoich mieszkańców. 
+               Jego wizją jest stworzenie miejsca, gdzie każdy może znaleźć swoje miejsce i być akceptowanym. Jest wrażliwy na potrzeby
+               innych i często podejmuje decyzje z myślą o dobru wspólnoty. Jednakże, jego wewnętrzne konflikty i niepokoje mogą
+               wpływać na jego zdolność do skutecznego zarządzania wioską. Mimo to, jest postacią, którą ludzie uwielbiają i szanują
+               za autentyczność i oddanie swojej sztuce oraz wspólnocie.</h2>
+             </div>
+         </div>
+        
          
       </section>
+       <!-- Wszelkie Wojskowe Sprawy -->
+
+       <section id="wojaki">
+
+        <div id="budynki">
+          <button id="centr" onclick="centrumSzk()" style="background-color: rgb(158, 184, 158);">Centrum Szkoleniowe: 50.000 💲, 1500 🌲, 1000 🗿</button>
+          <button id="kosz" onclick="koszary()" style="background-color: rgb(68, 152, 32);">Koszary: 1500 💲, 500 🌲,500 🗿</button>
+          <button id="fort" onclick="fort()" style="background-color: rgb(147, 62, 62);">Fortyfikacje: 40.000 💲, 200 🌲,  200 🗿</button>
+        </div>
+
+       </section>
+
 </body>
 </html>

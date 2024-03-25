@@ -1,12 +1,114 @@
-.ile {
 
+body{
+    background-image: url(tlo.jpg);
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.ile {
+    background-color: rgb(255, 248, 239);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 }
 
+#kategorie{
+    background-color: rgb(168, 131, 83);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2%;
+
+}
 button {
     border: 0px;
     width: 100px;
     height: 100px;
+    margin-right: 5px;
+}
+
+.budowle {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+  
+}
+
+#budynkiLista{
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 80%;
+    height: 100vh;
+    border: 5px solid black;
+}
+
+#info:hover{
+    background-color: rgb(235, 211, 179);
+}
+
+#zdjWlad {
+  width: 250px;
+  height: 400spx;
+  border: 5px gold double;
+
+}
+
+.zdjWlad {
+    width: 250px;
+    height: 400spx;
+    border: 5px gold double;
+  
+  }
+
+.napis{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+#owladcy{
+    display: flex;
+    justify-content: space-around ;
+    width: 80%;
+}
+
+#owladcywstecz{
+    display: flex;
+    justify-content: center ;
+    width: 100%;
+
+}
+
+#symbole{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+#wioskaInfo{
+    display: none;
+
+}
+
+#wojaki{
+    display: none;
+}
+
+#cobainsDeath{
+    display: none;
+}
+
+.news{
+    display: flex;
+    justify-content: space-around;
+}
+
+#wybor{
+    display: none;
 }
